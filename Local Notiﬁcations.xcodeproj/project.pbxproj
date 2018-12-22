@@ -12,6 +12,7 @@
 		5C626C1121CE372C00E2A042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626C0F21CE372C00E2A042 /* Main.storyboard */; };
 		5C626C1321CE372F00E2A042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C626C1221CE372F00E2A042 /* Assets.xcassets */; };
 		5C626C1621CE372F00E2A042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C626C1421CE372F00E2A042 /* LaunchScreen.storyboard */; };
+		5C626C2121CE5C0A00E2A042 /* UIViewController + alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C626C2021CE5C0A00E2A042 /* UIViewController + alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		5C626C1221CE372F00E2A042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C626C1521CE372F00E2A042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C626C1721CE372F00E2A042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C626C1E21CE59A100E2A042 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C626C2021CE5C0A00E2A042 /* UIViewController + alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,9 @@
 		5C626BFF21CE372C00E2A042 = {
 			isa = PBXGroup;
 			children = (
+				5C626C1E21CE59A100E2A042 /* README.md */,
+				5C626C1D21CE599100E2A042 /* screens */,
+				5C626C1F21CE5BD800E2A042 /* Extensions */,
 				5C626C0A21CE372C00E2A042 /* Local Notiﬁcations */,
 				5C626C0921CE372C00E2A042 /* Products */,
 			);
@@ -62,6 +68,21 @@
 				5C626C1721CE372F00E2A042 /* Info.plist */,
 			);
 			path = "Local Notiﬁcations";
+			sourceTree = "<group>";
+		};
+		5C626C1D21CE599100E2A042 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		5C626C1F21CE5BD800E2A042 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5C626C2021CE5C0A00E2A042 /* UIViewController + alert.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C626C0E21CE372C00E2A042 /* ViewController.swift in Sources */,
+				5C626C2121CE5C0A00E2A042 /* UIViewController + alert.swift in Sources */,
 				5C626C0C21CE372C00E2A042 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

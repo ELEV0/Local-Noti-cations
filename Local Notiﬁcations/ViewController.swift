@@ -14,11 +14,17 @@ class ViewController: UIViewController {
     @objc func registerLocal() {
         let center = UNUserNotificationCenter.current()
         
-        center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+        center.requestAuthorization(options: [.alert, .badge, .sound]) {[unowned self] (granted, error) in
             if granted {
-                print("Yay!")
+//                print("Yay!")
+                DispatchQueue.main.async {
+                    self.alert(title: "Yay!", message: nil, dismissTitle: "OK")
+                }
             }else{
-                print("D'oh")
+//                print("D'oh")
+                DispatchQueue.main.async {
+                    self.alert(title: "D'oh", message: nil, dismissTitle: "OK")
+                }
             }
         }
     }
@@ -77,17 +83,22 @@ extension ViewController: UNUserNotificationCenterDelegate {
         // pull out the buried userInfo dictionary
         let userInfo = response.notification.request.content.userInfo
         
+        var receivedData = ""
+        
         if let customData = userInfo["customData"] as? String {
-            print("Custom data received: \(customData)")
+            receivedData = "Custom data received: \(customData)"
+//            print(receivedData)
         }
         
         switch response.actionIdentifier {
         case UNNotificationDefaultActionIdentifier:
             // the user swiped to unlock
-            print("Default identifier")
+//            print("Default identifier")
+            alert(title: "Default identifier selected", message: receivedData, dismissTitle: "OK")
         case "show":
             // the user tapped our "show more info..." button
-            print("Show more information...")
+//            print("Show more information...")
+            alert(title: "Show more information selected", message: receivedData, dismissTitle: "OK")
         default:
             break
         }
