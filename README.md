@@ -12,6 +12,9 @@
 <img src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
 </p>
 
+<div align = "center">
+<img src="/screens/video.gif" width="40%">
+</div>
 
 ## Main functionality
 * simple app with notifications
